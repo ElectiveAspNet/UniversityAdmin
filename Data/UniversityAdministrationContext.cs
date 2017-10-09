@@ -14,6 +14,10 @@ namespace UniversityAdministration.Models
         {
         }
 
-        public DbSet<UniversityAdministration.Models.Entities.Student> Student { get; set; }
+        public DbSet<Student> Student { get; set; }
+
+        public DbSet<Course> Course { get; set; }
+
+        public DbSet<UniversityAdministration.Models.Entities.Enrollment> Enrollment { get; set; }
     }
 }
